@@ -98,14 +98,34 @@ for (index = 0; index < graduates.length; index++) {
 
 console.log(universities.sort())
 
+
+
+
+
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
 The resulting contact information should have a space between the first name and the email information like this: 
 Name email@example.com
 
 Log the result of your new array. */
+
 const contactInfo = [];
+
+for (index = 0; index < graduates.length; index++) {
+  (graduates[index].first_name && graduates[index].email);
+    contactInfo.push(graduates[index]);
+  
+  
+}
+  
+
+
+
+
 console.log(contactInfo);
+
+
+
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
