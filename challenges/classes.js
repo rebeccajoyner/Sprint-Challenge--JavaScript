@@ -1,8 +1,8 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 
 
-class CuboidMaker {
-    constructor(cube) { 
+class CuboidMaker {  ///classes are just special functions;;; class declaration of cuboidmaker
+    constructor(cube) {  ///constructor function = foundation of class;;; build the properies inside constructor body on this keyword
         this.length = cube.length; 
         this.width = cube.width;
         this.height = cube.height;
@@ -15,7 +15,10 @@ class CuboidMaker {
   surfaceArea() {                                                          
       return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
   }                                   
-}                                    
+}
+
+
+///classes are returned as objects
                                                                                                                                                                                                                                                                                          
 const cuboid = new CuboidMaker({ 
     length: 4,                                                                                                                                                                                                                                                                           
