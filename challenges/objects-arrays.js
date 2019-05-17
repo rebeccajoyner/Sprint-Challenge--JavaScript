@@ -195,8 +195,16 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = [];
+const lowerCase = zooAnimals.map(list => list.animal_name.toLowerCase());
+
+///in array zoo animals param list function looks at list of animal names .turns animal names only into lower case with empty fucntion 
+
 console.log(lowerCase); 
+
+
+
+
+
 
 /* Request 3: .filter() 
 
