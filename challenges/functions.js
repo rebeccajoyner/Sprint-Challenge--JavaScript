@@ -7,6 +7,14 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
+function consume(a, b, cb) {
+  return cb(a + b);
+}
+
+consume(2, 2, add => console.log(add));
+
+
+
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
