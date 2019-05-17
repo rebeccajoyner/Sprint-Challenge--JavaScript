@@ -1,0 +1,18 @@
+Describe the biggest difference between .forEach & .map.
+
+* .forEach gives already provided info
+* .map can change info
+
+
+
+What is the difference between a function and a method?
+method is a function that is a property of an object
+
+What is closure?
+functions look outward for context; 
+if some variable isn’t defined in a function’s scope, the function will look outside the scope & search for a variable being referenced in the outer scope. 
+
+Describe the four rules of the 'this' keyword.
+
+Why do we need super() in an extended class?
+super() is used to tell a parent’s constructor to be concerned with the child’s attributes
