@@ -11,6 +11,8 @@ function consume(a, b, cb) {
   return cb(a + b);
 }
 
+
+///function of adding 2 plus 2 returned with the callback add by invoking add which was cb in a con.log
 consume(2, 2, add => console.log(add));
 
 
