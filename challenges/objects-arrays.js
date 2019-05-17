@@ -62,11 +62,11 @@ console.log(dino1.period);
 
 dino1.roar = function () {
   return `RAWERSRARARWERSARARARRRRR!`;
-}
+}  ///dino1 given method of roar by anonymous function expession/ return statement defined rawr
 
 
 console.log(dino1.roar());
-
+///con log invoked function for dino1 to return the rawr
 
 // ==== Arrays ====
 
