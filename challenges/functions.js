@@ -23,6 +23,14 @@ consume(2, 2, add => console.log(add));
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
+function consume(a, b, cb) {
+  return cb(a * b);
+}
+consume multiply(10 * 16);
+
+
+
+
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
