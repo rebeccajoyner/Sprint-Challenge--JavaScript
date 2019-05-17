@@ -37,6 +37,11 @@ CuboidMaker.prototype.volume = function () {
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
 
+CuboidMaker.prototype = Object.create(CuboidMaker.prototype);
+CuboidMaker.prototype.area = function () {
+  return (`2 * (${this.length} * ${this.width} + ${this.length} * ${this.height} + ${this.width} * ${this.height}`)
+}
+
 
 
 
