@@ -50,7 +50,7 @@ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: when a function is declared a new scope is created; any vari declared within that function's scope will be enclosed in scope that belongs to that function;; function will look outside scope chain for vari referenced in outer scope if vari is not defined in the function's scope
 
 
 const external = "I'm outside the function";
