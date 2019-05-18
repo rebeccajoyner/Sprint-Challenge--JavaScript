@@ -9,7 +9,7 @@ class CuboidMaker {  ///classes are just special functions;;; class declaration 
   }                    
                       
   volume() {      
-      return `${this.length} * ${this.width} * ${this.height}`;
+      return this.length * this.width * this.height;
   }
     
   surfaceArea() {                                                

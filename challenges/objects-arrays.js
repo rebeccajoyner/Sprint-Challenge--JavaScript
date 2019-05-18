@@ -88,7 +88,7 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
 
-for (index = 0; index < graduates.length; index++) { 
+for (let index = 0; index < graduates.length; index++) { 
   universities.push(graduates[index].university);
 }
 ///index set to start at first item of array graduates .length of whole array graduates
@@ -111,9 +111,9 @@ Log the result of your new array. */
 
 const contactInfo = [];
 
-for (index = 0; index < graduates.length; index++) {
-  (graduates[index].first_name && graduates[index].email);
-    contactInfo.push(graduates[index]);
+for (let index = 0; index < graduates.length; index++) {
+  
+    contactInfo.push(`Name: ${graduates[index].first_name} Email: ${graduates[index].email}`);
   
   
 }
@@ -131,15 +131,15 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
 
-for (index = 0; index < graduates.length; index++) {
-  if (graduates[index].first_name = "uni") {
+for (let index = 0; index < graduates.length; index++) {
+  if (graduates[index].university.includes("Uni")) {
     uni.push(graduates[index]);
   }
 }
 ///if in the index of graduates the name has "uni" inside of it then that number will be given when uni.length is invoked
 
 
-console.log(uni.length);
+console.log(uni);
 
 
 
@@ -223,12 +223,22 @@ console.log(largerPopulation);
 
 
 
+
+
 /* Request 4: .reduce() 
 
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = 0;
+const populationTotal = zooAnimals.reduce((accumulator, index) => {
+  return accumulator + index.population; 
+}, 0);
+
+
+
+
+
+
 console.log(populationTotal);
 
 

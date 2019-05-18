@@ -28,3 +28,15 @@ when constructor function is used: specific instance of the object created & ret
 
 Why do we need super() in an extended class?
 super() is used to tell a parent’s constructor to be concerned with the child’s attributes
+
+
+const Rebecca = {
+    name: 'Rebecca',
+    lastName: 'Joyner',
+    speak: function() {
+        return `hello, my nbame is ${this.name} ${this.lastName}`           Banana.call(Raebecc)
+    }
+}
+
+Rebecca.speak()
+
